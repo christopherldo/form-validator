@@ -44,6 +44,8 @@ body{
 }
 
 .error{
+  position: absolute;
+  width: 300px;
   font-size: 11px;
   background-color: #f00;
   color: #fff;
