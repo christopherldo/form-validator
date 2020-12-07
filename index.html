@@ -9,6 +9,40 @@
 </head>
 
 <body>
+  <div class="screen">
+    <div class="leftside">
+      <img src="./images/financial_data.png" alt="">
+    </div>
+
+    <div class="rightside">
+      <h1>Crie uma conta</h1>
+
+      <form action="./cadastro.php" method="POST" class="b7validator">
+        <label for="name">
+          Seu nome:<br>
+          <input type="text" name="name" id="name" data-rules="required|min=2">
+        </label>
+
+        <label for="email">
+          Seu email:<br>
+          <input type="text" name="email" id="email">
+        </label>
+
+        <label for="password">
+          Sua senha:<br>
+          <input type="password" name="password" id="password">
+        </label>
+
+        <label for="submit">
+          <input type="submit" id="btnSubmit" value="Cadastrar">
+        </label>
+      </form>
+
+      <div>
+        Já tem uma conta? <a href="#">Faça login!</a>
+      </div>
+    </div>
+  </div>
 
   <script src="./script.js"></script>
 </body>
