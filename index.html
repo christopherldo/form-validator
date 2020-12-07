@@ -20,17 +20,17 @@
       <form action="./cadastro.php" method="POST" class="b7validator">
         <label for="name">
           Seu nome:<br>
-          <input type="text" name="name" id="name" data-rules="required|min=2">
+          <input type="text" name="name" id="name" data-rules="min=2|required">
         </label>
 
         <label for="email">
           Seu email:<br>
-          <input type="text" name="email" id="email">
+          <input type="text" name="email" id="email" data-rules="email|required">
         </label>
 
         <label for="password">
           Sua senha:<br>
-          <input type="password" name="password" id="password">
+          <input type="password" name="password" id="password" data-rules="min=8|required">
         </label>
 
         <label for="submit">
